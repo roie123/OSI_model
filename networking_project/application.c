@@ -1,34 +1,25 @@
-
-
-
-typedef enum Method {GET ,POST,PUT,DELETE} Method;
-typedef enum Content_type {TEXT,IMAGE,STREAM} Content_type;
-
-
-typedef struct Application_data
-{
-    Method method;
-    char user_name[40];
-    Content_type content_type;
-} Application_data; 
+#include "application.h"
+#include <stdio.h>
+#include <termios.h>
+#include <unistd.h>
 
 
 Method getMethod(char choice){
 switch (choice )
 {
-case 1:
+case '1':
 return GET;
 break;
 
-case 2:
+case '2':
 return PUT;
 break;
 
-case 3:
+case '3':
 return POST;
 break;
 
-case 4:
+case '4':
 return DELETE;
 break;
 default:
@@ -43,15 +34,15 @@ Content_type getContentType(char choice){
 
 switch (choice)
 {
-case 1:
+case '1':
     return TEXT;
     break;
 
-    case 2:
+    case '2':
     return IMAGE;
     break;
 
-    case 3:
+    case '3':
     return STREAM;
     break;
 default:
@@ -61,27 +52,47 @@ default:
 
 }
 Application_data app(){
-char choice ,temp,i=0;
+char choice ,i=0;
 char name[40]={0};
-
-
-printf("Hi welcome to the app , Lets transfer some packets ! ");
-printf("first lets make the request");
-printf("Choose the request type 1) GET  2) POST 3)PUT 4)DELETE");
+char temp='1';
+char text[100]={0};
+printf("Hi welcome to the app , Lets transfer some packets ! \n");
+printf("first lets make the request\n");
+printf("Choose the request type \n1) GET  2) POST 3)PUT 4)DELETE \n");
 choice=getchar();
-printf("%d  selected",choice);
-do{
-temp=getchar();
-name[i]=temp;
-i++;
+printf("%c  selected \n",choice);
+scanf("%*c"); 
 
-}while(temp!= '\n');
-printf("");
+while((temp=getchar()) !='\n' && temp!=EOF){
+    name[i]=temp;
+    i++;
+}
+name[i]='\0';
 
-printf("Choose the content type 1) TEXT  2) IMAGE ");
+tcflush(STDIN_FILENO, TCIFLUSH);
+
+printf("Choose the **content type**  1) TEXT  2) IMAGE \n");
+Content_type content_type = getContentType(getchar());
 
 
-Application_data application_data ={.method=getMethod(choice) , .content_type=getContentType};
+
+puts("WRITE THE TEXT HERE : \n");
+fgets(text,100,stdin);
+tcflush(STDIN_FILENO, TCIFLUSH);
+
+
+
+Application_data application_data ={.text =text, .method=getMethod(choice) ,.user_name=name ,.content_type=content_type};
+
+
+printf("DATA TO BE ENCRYPTED : \n" 
+    "username = %s \n"
+    "METHOD = %d \n" 
+    "CONTENT_TYPE =  %c  " 
+   "TEXT = %s" , 
+   application_data.user_name ,application_data.method,application_data.content_type,application_data.text
+   );
+
 return  application_data;
 
 }
