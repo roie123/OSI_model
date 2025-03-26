@@ -7,7 +7,6 @@
 typedef enum Method {GET=1 ,POST,PUT,DELETE} Method;
 typedef enum Content_type {TEXT=1,IMAGE,STREAM} Content_type;
 
-
 typedef struct Application_data
 {
     Method method;

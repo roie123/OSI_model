@@ -1,25 +1,17 @@
 #include "application.c"
 #include "presentation.c"
-
-
+#include "session.c"
+#include "util.h"
 int main(int argc, char const *argv[])
 {
     int a =0;
 
 Application_data request_data=app();
 
- Encrypted_data e=some_encryption(request_data);
+Encrypted_data e=some_encryption(request_data);
+start_session(destination_folder);
 
-    while (a<200)
-    {
-        printf("%d",e.arr[a]);
-        a++;
-        if (a==199)
-        {
-            printf("\n");
-        }
-        
-    }
+
     
 
 
