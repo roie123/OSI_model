@@ -32,6 +32,7 @@ return GET;
 
 Content_type getContentType(char choice){
 
+
 switch (choice)
 {
 case '1':
@@ -49,50 +50,68 @@ default:
     break;
 }
 
-
 }
+
+
+
+static Application_data app_data;
+
+
 Application_data app(){
-char choice ,i=0;
-char name[40]={0};
-char temp='1';
-char text[100]={0};
-printf("Hi welcome to the app , Lets transfer some packets ! \n");
-printf("first lets make the request\n");
-printf("Choose the request type \n1) GET  2) POST 3)PUT 4)DELETE \n");
-choice=getchar();
-printf("%c  selected \n",choice);
-scanf("%*c"); 
+    char choice;
+    char name[40] = {0};
+    char text[100] = {0};
+    char temp;
+    int i = 0;
 
-while((temp=getchar()) !='\n' && temp!=EOF){
-    name[i]=temp;
-    i++;
-}
-name[i]='\0';
+    printf("\n=======================================\n");
+    printf(" Welcome to the Packet Transfer App!  \n");
+    printf("=======================================\n\n");
 
-tcflush(STDIN_FILENO, TCIFLUSH);
+    printf("Let's create a new request.\n\n");
+    printf("Choose the request type:\n");
+    printf("   1) GET\n");
+    printf("   2) POST\n");
+    printf("   3) PUT\n");
+    printf("   4) DELETE\n\n");
 
-printf("Choose the **content type**  1) TEXT  2) IMAGE \n");
-Content_type content_type = getContentType(getchar());
+    printf("Enter your choice: ");
 
 
+    
+    choice = getchar();
+    while (getchar() != '\n');  
 
-puts("WRITE THE TEXT HERE : \n");
-fgets(text,100,stdin);
-tcflush(STDIN_FILENO, TCIFLUSH);
+    printf("%c selected\n", choice);
 
+    printf("Enter your name: ");
+    while ((temp = getchar()) != '\n' && temp != EOF) {
+        if (i < 39) {  // Prevent buffer overflow
+            name[i++] = temp;
+        }
+    }
+    name[i] = '\0';
 
+    printf("Choose the **content type**  1) TEXT  2) IMAGE\n");
+    int content_choice = getchar();  
+    while (getchar() != '\n');  
 
-Application_data application_data ={.text =text, .method=getMethod(choice) ,.user_name=name ,.content_type=content_type};
+    
+    int content_type = getContentType(content_choice);
 
-
-printf("DATA TO BE ENCRYPTED : \n" 
-    "username = %s \n"
-    "METHOD = %d \n" 
-    "CONTENT_TYPE =  %c  " 
-   "TEXT = %s" , 
-   application_data.user_name ,application_data.method,application_data.content_type,application_data.text
-   );
-
-return  application_data;
+    printf("WRITE THE TEXT HERE:\n");
+    fgets(text, sizeof(text), stdin);
+    
+    
+    text[strcspn(text, "\n")] = '\0';
+  
+    
+    Application_data app_data;
+    strcpy(app_data.user_name, name);
+    strcpy(app_data.text, text);
+    app_data.content_type = (int)content_type;
+    app_data.method = (int)getMethod(choice);
+ 
+    return app_data;
 
 }

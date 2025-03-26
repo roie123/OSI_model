@@ -19,14 +19,14 @@ typedef struct Encrypted_data
  * @return ReturnType 
  */
  int some_encryption(Application_data data) {
-     // Implementation
-     printf("DATA TO BE ENCRYPTED : \n" 
-         "username = %s \n"
-         "METHOD = %d \n" 
-         "CONTENT_TYPE =  %c  " 
-        "TEXT = %s" , 
-        data.user_name ,data.method,data.content_type,data.text
-        );
+     
+    //  printf("DATA TO BE ENCRYPTED : \n" 
+    //      "username = %s \n"
+    //      "METHOD = %d \n" 
+    //      "CONTENT_TYPE =  %c  " 
+    //     "TEXT = %s" , 
+    //     data.user_name ,data.method,data.content_type,data.text
+    //     );
 
 
         return 1;
