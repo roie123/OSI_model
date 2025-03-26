@@ -46,9 +46,9 @@ static Encrypted_data encrypted_data ={0};
     
     
     for (size_t i = 0; i < 40 && data.user_name[i] != '\0'; i++) {
-        // Check if the character's ASCII value is even
+        
         if (i % 2 == 0) {
-            data.user_name[i] += 1;  // Increment the ASCII value
+            data.user_name[i] += 1;  
         }
         else{
             data.user_name[i] -= 1;
