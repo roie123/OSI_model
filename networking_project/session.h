@@ -2,7 +2,7 @@
 #define SESSION_H
 
 
-typedef enum sych_points_values {NAME=0,TEXT=40,CONTENT_TYPE=198,METHOD=199};
+typedef enum sych_points_values {NAME=0,TEXT_SYNCH=40,CONTENT_TYPE=198,METHOD=199};
 
 typedef unsigned long ul;
 
