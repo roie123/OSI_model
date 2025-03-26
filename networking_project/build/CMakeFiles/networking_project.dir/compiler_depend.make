@@ -5,6 +5,7 @@ CMakeFiles/networking_project.dir/main.c.o: /home/royivri/networking/OSI_MODEL/n
   /home/royivri/networking/OSI_MODEL/networking_project/application.c \
   /home/royivri/networking/OSI_MODEL/networking_project/application.h \
   /home/royivri/networking/OSI_MODEL/networking_project/presentation.c \
+  /home/royivri/networking/OSI_MODEL/networking_project/presentation.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/stdc-predef.h \
@@ -75,6 +76,8 @@ CMakeFiles/networking_project.dir/main.c.o: /home/royivri/networking/OSI_MODEL/n
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
+/usr/include/x86_64-linux-gnu/bits/termios-tcflow.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
@@ -103,11 +106,13 @@ CMakeFiles/networking_project.dir/main.c.o: /home/royivri/networking/OSI_MODEL/n
 
 /usr/include/stdio.h:
 
+/home/royivri/networking/OSI_MODEL/networking_project/main.c:
+
 /home/royivri/networking/OSI_MODEL/networking_project/presentation.c:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
-/home/royivri/networking/OSI_MODEL/networking_project/main.c:
+/home/royivri/networking/OSI_MODEL/networking_project/presentation.h:
 
 /home/royivri/networking/OSI_MODEL/networking_project/application.c:
 
@@ -144,5 +149,3 @@ CMakeFiles/networking_project.dir/main.c.o: /home/royivri/networking/OSI_MODEL/n
 /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h:
 
 /usr/include/x86_64-linux-gnu/bits/termios-misc.h:
-
-/usr/include/x86_64-linux-gnu/bits/termios-tcflow.h:
