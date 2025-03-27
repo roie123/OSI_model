@@ -4,7 +4,10 @@
         "unistd.h": "c",
         "application.h": "c",
         "session.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "util.h": "c",
+        "presentation.h": "c",
+        "stddef.h": "c"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }
