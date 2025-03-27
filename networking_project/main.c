@@ -11,8 +11,9 @@ Encrypted_data e=some_encryption(request_data);
 Connection con=start_session(destination_folder);
 segment_data(con,e);
 
-    
+
 
 
     return 0;
 }
+

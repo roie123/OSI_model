@@ -66,6 +66,7 @@ CMakeFiles/networking_project.dir/main.c.o: /home/royivri/networking/OSI_MODEL/n
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
@@ -85,11 +86,13 @@ CMakeFiles/networking_project.dir/main.c.o: /home/royivri/networking/OSI_MODEL/n
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+  /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/stddef.h
 
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/stddef.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
@@ -112,6 +115,8 @@ CMakeFiles/networking_project.dir/main.c.o: /home/royivri/networking/OSI_MODEL/n
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
@@ -204,8 +209,6 @@ CMakeFiles/networking_project.dir/main.c.o: /home/royivri/networking/OSI_MODEL/n
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 

@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/networking_project.dir/main.c.o -o networking_project
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/networking_project.dir/link.d CMakeFiles/networking_project.dir/main.c.o -o networking_project

@@ -95,6 +95,7 @@ networking_project_EXTERNAL_OBJECTS =
 
 networking_project: CMakeFiles/networking_project.dir/main.c.o
 networking_project: CMakeFiles/networking_project.dir/build.make
+networking_project: CMakeFiles/networking_project.dir/compiler_depend.ts
 networking_project: CMakeFiles/networking_project.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/royivri/networking/OSI_MODEL/networking_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable networking_project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/networking_project.dir/link.txt --verbose=$(VERBOSE)

@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <termios.h>
 #include <unistd.h>
-
+#include <string.h>
 
 Method getMethod(char choice){
 switch (choice )
