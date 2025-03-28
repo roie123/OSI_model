@@ -6,6 +6,7 @@
 typedef struct Device {
     char device_name[50];
     char device_path[50];
+    char MAC_address[50];
 } Device;
 typedef struct Wrapped_Request {
     char network_name[50];

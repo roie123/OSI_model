@@ -4,8 +4,8 @@
 #include "network_layer.h"
 #include "transport.h"
 #include "util.h"
-#include "SYSTEM_A/system_config_A.c"
-#include "SYSTEM_B/system_config_B.c"
+#include "SYSTEM_A/system_config_A.h"
+#include "SYSTEM_B/system_config_B.h"
 static Wrapped_Request wrapped_request;
 
 
