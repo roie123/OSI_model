@@ -1,5 +1,6 @@
 #ifndef SESSION_H
 #define SESSION_H
+#include <stddef.h>
 
 
 typedef enum sych_points_values {NAME=0,TEXT_SYNCH=40,CONTENT_TYPE=198,METHOD=199};

@@ -85,12 +85,12 @@ clean: CMakeFiles/networking_project.dir/clean
 CMakeFiles/networking_project.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/networking_project.dir/build.make CMakeFiles/networking_project.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/networking_project.dir/build.make CMakeFiles/networking_project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/royivri/networking/OSI_MODEL/networking_project/build/CMakeFiles --progress-num=1,2 "Built target networking_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/royivri/networking/OSI_MODEL/networking_project/build/CMakeFiles --progress-num=1,2,3,4 "Built target networking_project"
 .PHONY : CMakeFiles/networking_project.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/networking_project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/royivri/networking/OSI_MODEL/networking_project/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/royivri/networking/OSI_MODEL/networking_project/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/networking_project.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/royivri/networking/OSI_MODEL/networking_project/build/CMakeFiles 0
 .PHONY : CMakeFiles/networking_project.dir/rule
@@ -102,7 +102,7 @@ networking_project: CMakeFiles/networking_project.dir/rule
 # codegen rule for target.
 CMakeFiles/networking_project.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/networking_project.dir/build.make CMakeFiles/networking_project.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/royivri/networking/OSI_MODEL/networking_project/build/CMakeFiles --progress-num=1,2 "Finished codegen for target networking_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/royivri/networking/OSI_MODEL/networking_project/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target networking_project"
 .PHONY : CMakeFiles/networking_project.dir/codegen
 
 # clean rule for target.

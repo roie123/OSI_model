@@ -2,4 +2,8 @@ cmake_minimum_required(VERSION 3.10)
 
 project(osi_model C)
 set(CMAKE_C_STANDARD 99)
-add_executable(networking_project main.c )
+add_executable(networking_project main.c
+        known_devices.h
+        network_layer.c
+
+)

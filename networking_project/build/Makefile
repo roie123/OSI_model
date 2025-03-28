@@ -129,6 +129,54 @@ networking_project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/networking_project.dir/build.make CMakeFiles/networking_project.dir/build
 .PHONY : networking_project/fast
 
+SYSTEM_A/system_config_A.o: SYSTEM_A/system_config_A.c.o
+.PHONY : SYSTEM_A/system_config_A.o
+
+# target to build an object file
+SYSTEM_A/system_config_A.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/networking_project.dir/build.make CMakeFiles/networking_project.dir/SYSTEM_A/system_config_A.c.o
+.PHONY : SYSTEM_A/system_config_A.c.o
+
+SYSTEM_A/system_config_A.i: SYSTEM_A/system_config_A.c.i
+.PHONY : SYSTEM_A/system_config_A.i
+
+# target to preprocess a source file
+SYSTEM_A/system_config_A.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/networking_project.dir/build.make CMakeFiles/networking_project.dir/SYSTEM_A/system_config_A.c.i
+.PHONY : SYSTEM_A/system_config_A.c.i
+
+SYSTEM_A/system_config_A.s: SYSTEM_A/system_config_A.c.s
+.PHONY : SYSTEM_A/system_config_A.s
+
+# target to generate assembly for a file
+SYSTEM_A/system_config_A.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/networking_project.dir/build.make CMakeFiles/networking_project.dir/SYSTEM_A/system_config_A.c.s
+.PHONY : SYSTEM_A/system_config_A.c.s
+
+SYSTEM_B/system_config_B.o: SYSTEM_B/system_config_B.c.o
+.PHONY : SYSTEM_B/system_config_B.o
+
+# target to build an object file
+SYSTEM_B/system_config_B.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/networking_project.dir/build.make CMakeFiles/networking_project.dir/SYSTEM_B/system_config_B.c.o
+.PHONY : SYSTEM_B/system_config_B.c.o
+
+SYSTEM_B/system_config_B.i: SYSTEM_B/system_config_B.c.i
+.PHONY : SYSTEM_B/system_config_B.i
+
+# target to preprocess a source file
+SYSTEM_B/system_config_B.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/networking_project.dir/build.make CMakeFiles/networking_project.dir/SYSTEM_B/system_config_B.c.i
+.PHONY : SYSTEM_B/system_config_B.c.i
+
+SYSTEM_B/system_config_B.s: SYSTEM_B/system_config_B.c.s
+.PHONY : SYSTEM_B/system_config_B.s
+
+# target to generate assembly for a file
+SYSTEM_B/system_config_B.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/networking_project.dir/build.make CMakeFiles/networking_project.dir/SYSTEM_B/system_config_B.c.s
+.PHONY : SYSTEM_B/system_config_B.c.s
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... networking_project"
+	@echo "... SYSTEM_A/system_config_A.o"
+	@echo "... SYSTEM_A/system_config_A.i"
+	@echo "... SYSTEM_A/system_config_A.s"
+	@echo "... SYSTEM_B/system_config_B.o"
+	@echo "... SYSTEM_B/system_config_B.i"
+	@echo "... SYSTEM_B/system_config_B.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

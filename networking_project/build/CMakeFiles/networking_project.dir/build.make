@@ -86,18 +86,50 @@ CMakeFiles/networking_project.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/networking_project.dir/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/royivri/networking/OSI_MODEL/networking_project/main.c -o CMakeFiles/networking_project.dir/main.c.s
 
+CMakeFiles/networking_project.dir/SYSTEM_A/system_config_A.c.o: CMakeFiles/networking_project.dir/flags.make
+CMakeFiles/networking_project.dir/SYSTEM_A/system_config_A.c.o: /home/royivri/networking/OSI_MODEL/networking_project/SYSTEM_A/system_config_A.c
+CMakeFiles/networking_project.dir/SYSTEM_A/system_config_A.c.o: CMakeFiles/networking_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/royivri/networking/OSI_MODEL/networking_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/networking_project.dir/SYSTEM_A/system_config_A.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/networking_project.dir/SYSTEM_A/system_config_A.c.o -MF CMakeFiles/networking_project.dir/SYSTEM_A/system_config_A.c.o.d -o CMakeFiles/networking_project.dir/SYSTEM_A/system_config_A.c.o -c /home/royivri/networking/OSI_MODEL/networking_project/SYSTEM_A/system_config_A.c
+
+CMakeFiles/networking_project.dir/SYSTEM_A/system_config_A.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/networking_project.dir/SYSTEM_A/system_config_A.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/royivri/networking/OSI_MODEL/networking_project/SYSTEM_A/system_config_A.c > CMakeFiles/networking_project.dir/SYSTEM_A/system_config_A.c.i
+
+CMakeFiles/networking_project.dir/SYSTEM_A/system_config_A.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/networking_project.dir/SYSTEM_A/system_config_A.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/royivri/networking/OSI_MODEL/networking_project/SYSTEM_A/system_config_A.c -o CMakeFiles/networking_project.dir/SYSTEM_A/system_config_A.c.s
+
+CMakeFiles/networking_project.dir/SYSTEM_B/system_config_B.c.o: CMakeFiles/networking_project.dir/flags.make
+CMakeFiles/networking_project.dir/SYSTEM_B/system_config_B.c.o: /home/royivri/networking/OSI_MODEL/networking_project/SYSTEM_B/system_config_B.c
+CMakeFiles/networking_project.dir/SYSTEM_B/system_config_B.c.o: CMakeFiles/networking_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/royivri/networking/OSI_MODEL/networking_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/networking_project.dir/SYSTEM_B/system_config_B.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/networking_project.dir/SYSTEM_B/system_config_B.c.o -MF CMakeFiles/networking_project.dir/SYSTEM_B/system_config_B.c.o.d -o CMakeFiles/networking_project.dir/SYSTEM_B/system_config_B.c.o -c /home/royivri/networking/OSI_MODEL/networking_project/SYSTEM_B/system_config_B.c
+
+CMakeFiles/networking_project.dir/SYSTEM_B/system_config_B.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/networking_project.dir/SYSTEM_B/system_config_B.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/royivri/networking/OSI_MODEL/networking_project/SYSTEM_B/system_config_B.c > CMakeFiles/networking_project.dir/SYSTEM_B/system_config_B.c.i
+
+CMakeFiles/networking_project.dir/SYSTEM_B/system_config_B.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/networking_project.dir/SYSTEM_B/system_config_B.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/royivri/networking/OSI_MODEL/networking_project/SYSTEM_B/system_config_B.c -o CMakeFiles/networking_project.dir/SYSTEM_B/system_config_B.c.s
+
 # Object files for target networking_project
 networking_project_OBJECTS = \
-"CMakeFiles/networking_project.dir/main.c.o"
+"CMakeFiles/networking_project.dir/main.c.o" \
+"CMakeFiles/networking_project.dir/SYSTEM_A/system_config_A.c.o" \
+"CMakeFiles/networking_project.dir/SYSTEM_B/system_config_B.c.o"
 
 # External object files for target networking_project
 networking_project_EXTERNAL_OBJECTS =
 
 networking_project: CMakeFiles/networking_project.dir/main.c.o
+networking_project: CMakeFiles/networking_project.dir/SYSTEM_A/system_config_A.c.o
+networking_project: CMakeFiles/networking_project.dir/SYSTEM_B/system_config_B.c.o
 networking_project: CMakeFiles/networking_project.dir/build.make
 networking_project: CMakeFiles/networking_project.dir/compiler_depend.ts
 networking_project: CMakeFiles/networking_project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/royivri/networking/OSI_MODEL/networking_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable networking_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/royivri/networking/OSI_MODEL/networking_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable networking_project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/networking_project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
