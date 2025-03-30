@@ -20,7 +20,7 @@ TCP will ensure all the chunks have arrived safely and in order
 
 */
 static Segmented_data segmented_data;
-#define SLEEP_TIME 2000000
+#define SLEEP_TIME 2
 /**
  * @brief this method will segment the data into smaller chunks 
  * 
@@ -46,7 +46,9 @@ for (size_t i = 0; i < 50; i++)
 for (size_t i = 50; i < 100; i++)
 {
     segmented_data.data_chunk_2[i]=data.arr[i];
+
     printf("%d",segmented_data.data_chunk_2[i]);
+
 
 }
     printf("\nCHUNK 3 ===>");

@@ -6,6 +6,7 @@ add_executable(networking_project main.c
         known_devices.h
         network_layer.c
         data_link.c
+        physical.c
         SYSTEM_A/system_config_A.c
         SYSTEM_B/system_config_B.c
 
