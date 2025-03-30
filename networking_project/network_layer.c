@@ -31,7 +31,7 @@ Wrapped_Request wrapped_request_creation(Segmented_data data) {
     strcpy(wrapped_request.device[1].device_path,get_info_device_B().device_path);
 
 
-    printf("<====================NETWORK %s :====================> \n",wrapped_request.network_name);
+    printf("\n\n<====================NETWORK %s :====================> \n",wrapped_request.network_name);
     printf("NETWORK =====>DEVICE 1 NAME : %s : \n",wrapped_request.device[0].device_name);
     printf("NETWORK =====>DEVICE 1 PATH : %s\n",wrapped_request.device[0].device_path);
 

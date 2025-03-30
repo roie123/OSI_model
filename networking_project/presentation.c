@@ -22,25 +22,21 @@ static Encrypted_data encrypted_data ={0};
  * @return char[], the whole data is turned into a single array 
  */
  Encrypted_data some_encryption(Application_data data) {
+     size_t a=0;
+
+     printf("\n<=================== INITIALIZING ARRAY ===================>\n");
+
+     while (a<200)
+     {
+
+         encrypted_data.arr[a]=0;
+         a++;
+     }
 
 
-
-
-
-
-
-
+    printf("\n<=================== ENCRYPTING DATA ===================>\n");
     
     
-    size_t a=0;
-     
-    while (a<200)
-    {
-       
-        encrypted_data.arr[a]=0;
-        printf("%d",encrypted_data.arr[a]);
-        a++;
-    }
 
     printf("\n \n");
     
