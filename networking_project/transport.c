@@ -32,13 +32,19 @@ Segmented_data segment_data(Connection con, Encrypted_data data ) {
 
     printf("\nCHUNK 1 ===>");
     usleep(SLEEP_TIME);
+// segmented_data.data_chunk_1={0};
 
 for (size_t i = 0; i < 50; i++)
 {
     segmented_data.data_chunk_1[i]=data.arr[i];
-    printf("%d",segmented_data.data_chunk_1[i]);
 
+    printf("%d,",segmented_data.data_chunk_1[i]);
+    fflush(stdout);
+    if (i%10==0) {
+        printf("\n");
+    }
 }
+
 
     printf("\nCHUNK 2 ===>");
     usleep(SLEEP_TIME);
@@ -47,17 +53,23 @@ for (size_t i = 50; i < 100; i++)
 {
     segmented_data.data_chunk_2[i]=data.arr[i];
 
-    printf("%d",segmented_data.data_chunk_2[i]);
+    printf("%d,",segmented_data.data_chunk_2[i]);
+    fflush(stdout);
 
-
+    if (i%10==0) {
+        printf("\n");
+    }
 }
     printf("\nCHUNK 3 ===>");
 
 for (size_t i =100; i < 150; i++)
 {
     segmented_data.data_chunk_3[i]=data.arr[i];
-    printf("%d",segmented_data.data_chunk_3[i]);
-
+    printf("%d,",segmented_data.data_chunk_3[i]);
+    fflush(stdout);
+    if (i%10==0) {
+        printf("\n");
+    }
 }
     printf("\nCHUNK 4 ===>");
     usleep(SLEEP_TIME);
@@ -65,8 +77,11 @@ for (size_t i =100; i < 150; i++)
 for (size_t i = 150; i < 200; i++)
 {
     segmented_data.data_chunk_4[i]=data.arr[i];
-    printf("%d",segmented_data.data_chunk_4[i]);
-
+    printf("%d,",segmented_data.data_chunk_4[i]);
+    fflush(stdout);
+    if (i%10==0) {
+        printf("\n");
+    }
 }
     usleep(SLEEP_TIME);
 
